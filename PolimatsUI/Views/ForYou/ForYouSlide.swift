@@ -13,6 +13,9 @@ struct ForYouSlide: View {
     @Environment(\.colorScheme) var colorScheme
     @State var animate = true
     
+    @State private var offset: CGFloat = .zero
+    @State private var progress: CGFloat = 0.0
+    
     
     var body: some View {
         
@@ -58,7 +61,7 @@ struct ForYouSlide: View {
                     .offset(x: animate ? 0 : 50, y: animate ? 350 : 200)
                 
                 
-                VStack(alignment: .center, spacing: 40) {
+                VStack(alignment: .center, spacing: 50) {
                     
                     Text("Senin için seçtiğimiz yazıyı\ngörmek için kaydır!")
                         .multilineTextAlignment(.center)
@@ -66,21 +69,35 @@ struct ForYouSlide: View {
                         .foregroundStyle(colorScheme == .dark ? .white : .black)
                         .lineSpacing(10)
                         .padding(.horizontal, 20)
-                        .opacity(animate ? 0.3 : 1)
+                        .opacity(max(0.3, progress + 0.1))
                     
                     
-                    Spacer()
+                    SlideButton(offset: $offset, progress: $progress)
                     
-                    
-                    
-                    
-                    
-                    
+         
                     .navigationDestination(isPresented: $mainVM.isActiveRandom) {
                         ForYou(dataPolimats: mainVM.polimatsDataRandom.first ?? exData.exArticle)
                     }
                 }
                 .padding(.bottom, 40)
+            }
+        }
+        
+        .onChange(of: offset) { value in
+            
+            mainVM.hapticFeedback(mode: .soft)
+            
+            if value == 180 {
+            
+                withAnimation(.easeInOut(duration: 0.5)){
+                    mainVM.isActiveRandom = true
+                }
+                
+                withAnimation(.easeInOut(duration: 1.5)){
+                    offset = 0
+                    progress = 0
+                }
+                
             }
         }
         

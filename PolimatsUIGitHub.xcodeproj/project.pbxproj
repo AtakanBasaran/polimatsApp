@@ -31,6 +31,7 @@
 		BB5C7E0D2B9F6ACC0081AC52 /* MadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C7E0C2B9F6ACC0081AC52 /* MadeIn.swift */; };
 		BB63C54F2BA9CB6E00EFE764 /* SearchArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63C54E2BA9CB6E00EFE764 /* SearchArticleView.swift */; };
 		BB6AB4202BBEBC540091CC69 /* ForYouSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */; };
+		BB6AB4432BC06B9C0091CC69 /* SlideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */; };
 		BB716CA02B94FEC600A440FE /* CategoryRectangleNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB716C9F2B94FEC600A440FE /* CategoryRectangleNew.swift */; };
 		BB716CA62B95250400A440FE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB716CA32B95250400A440FE /* Comfortaa-Bold.ttf */; };
 		BB716CA72B95250400A440FE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB716CA42B95250400A440FE /* Comfortaa-Light.ttf */; };
@@ -122,6 +123,7 @@
 		BB5C7E0C2B9F6ACC0081AC52 /* MadeIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeIn.swift; sourceTree = "<group>"; };
 		BB63C54E2BA9CB6E00EFE764 /* SearchArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArticleView.swift; sourceTree = "<group>"; };
 		BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouSlide.swift; sourceTree = "<group>"; };
+		BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
 		BB716C9F2B94FEC600A440FE /* CategoryRectangleNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRectangleNew.swift; sourceTree = "<group>"; };
 		BB716CA32B95250400A440FE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		BB716CA42B95250400A440FE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				BBBB7D352B976F4400244FB0 /* ForYouView.swift */,
 				BBBB7D372B97A47C00244FB0 /* ForYouBeginning.swift */,
 				BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */,
+				BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */,
 			);
 			path = ForYou;
 			sourceTree = "<group>";
@@ -462,7 +465,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */;
+			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -551,6 +554,7 @@
 				BB852EBB2B71666B00AA7043 /* EndArticle.swift in Sources */,
 				BB5C7E0D2B9F6ACC0081AC52 /* MadeIn.swift in Sources */,
 				BB852EA52B6FC15300AA7043 /* CategoryViewCell.swift in Sources */,
+				BB6AB4432BC06B9C0091CC69 /* SlideButton.swift in Sources */,
 				BB5C7E012B9A439B0081AC52 /* Constants.swift in Sources */,
 				BB852EB92B71658700AA7043 /* ArticleView.swift in Sources */,
 				BB2A55732B852E6D001F1993 /* ContentUsage.swift in Sources */,
@@ -853,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */ = {
+		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB852E902B6FA1B300AA7043 /* Debug */,
