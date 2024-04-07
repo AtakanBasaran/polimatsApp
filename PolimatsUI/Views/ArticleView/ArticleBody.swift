@@ -85,7 +85,7 @@ struct ImageViewModel: ElementViewModel {
                             Label("Fotoğrafı Kaydet", systemImage: "icloud.and.arrow.down")
                         }
                         
-                        ShareLink(item: URL(string: src)!) {
+                        ShareLink(item: URL(string: src) ?? URL(string: "https://apps.apple.com/tr/app/polimats/id6475117419?l=tr")!) {
                             Label("Fotoğrafı Paylaş", systemImage: "square.and.arrow.up")
                         }
                     }

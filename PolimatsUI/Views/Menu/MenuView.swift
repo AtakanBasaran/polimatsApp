@@ -41,7 +41,7 @@ struct MenuView: View {
                 HStack(spacing: 30) {
                     
                     Button(action: {
-                        mainVM.hapticFeedback()
+                        mainVM.hapticFeedback(mode: .heavy)
                         isPresentedSearch = true
                     }, label: {
                         MenuItem(image: "magnifyingglass", text: "Ara", color: .realRed)
@@ -52,7 +52,7 @@ struct MenuView: View {
                     })
                     
                     Button(action: {
-                        mainVM.hapticFeedback()
+                        mainVM.hapticFeedback(mode: .heavy)
                         appearanceMode = (appearanceMode == .light) ? .dark : .light
                     }, label: {
                         MenuItem(image: colorScheme == .dark ? "moon.fill" : "sun.max", text: colorScheme == .dark ? "Koyu" : "Açık", color: colorScheme == .dark ? .white : .sun)
@@ -64,7 +64,7 @@ struct MenuView: View {
                 HStack(spacing: 30) {
                     
                     Button(action: {
-                        mainVM.hapticFeedback()
+                        mainVM.hapticFeedback(mode: .heavy)
                         EmailController.shared.sendEmail(subject: "Destek Talebi", to: "iletisim@polimats.com")
                     }, label: {
                         MenuItem(image: "envelope", text: "İletişim", color: .blue)
@@ -72,20 +72,8 @@ struct MenuView: View {
                     
                     
                     Button(action: {
-                        //                        silenceMode = (silenceMode == .loud) ? .silence : .loud
-                        //
-                        //                        if silenceMode == .silence {
-                        //                            silenceMode = .loud
-                        //                        } else {
-                        //                            isAlertActive = true
-                        //                        }
-                        //
-                        //                        if silenceMode == .loud {
-                        //                            OneSignal.User.pushSubscription.optIn()
-                        //                        } else {
-                        //                            OneSignal.User.pushSubscription.optOut()
-                        //                        }
-                        mainVM.hapticFeedback()
+
+                        mainVM.hapticFeedback(mode: .heavy)
                         isAlertActive = true
                         
                     }, label: {

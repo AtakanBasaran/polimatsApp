@@ -28,7 +28,7 @@ struct Categories: View {
                         mainVM.getData(category: categories[index][1])
                         mainVM.lastSelectedCategory = categories[index][1]
                         
-                        mainVM.hapticFeedback()
+                        mainVM.hapticFeedback(mode: .rigid)
                         
                     } label: {
                         CategoryRectangle(category: categories[index][0], width: 100, height: 30)

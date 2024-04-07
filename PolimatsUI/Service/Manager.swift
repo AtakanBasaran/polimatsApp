@@ -99,7 +99,7 @@ struct Manager {
     }
     
     
-     func getCategory(dataPolimats: WordPressData) -> String {
+    func getCategory(dataPolimats: WordPressData) -> String {
         
         switch dataPolimats.categories {
             
@@ -187,46 +187,47 @@ struct Manager {
             
             var viewModels: [ElementViewModel] = []
             for element in elements {
-                if let tagName = try? element.tagName() {
-                    switch tagName {
-                    case "img":
-                        if let src = try? element.attr("src") {
-                            viewModels.append(ImageViewModel(src: src))
-                        }
-                        
-//                    case "a":
-//                        if let href = try? element.attr("href"), let text = try? element.text() {
-//                            if text != "." {
-//                                viewModels.append(LinkViewModel(label: text, destination: href))
-//                            }
-//                        }
-                        
-                    case "h1", "h2", "h3", "h4", "h5", "h6":
-                        if let text = try? element.text() {
-                            viewModels.append(TitleViewModel(text: text))
-                        }
-                    case "p":
-                        if let text = try? element.text() {
-                            viewModels.append(ParagraphViewModel(text: text))
-                        }
-                        
-                    case "ul":
-                        if let listItems = try? element.select("li") {
-                            for listItem in listItems {
-                                if let text = try? listItem.text() {
-                                    viewModels.append(ListItemViewModel(text: text))
-                                }
+                
+                let tagName = element.tagName()
+                switch tagName {
+                case "img":
+                    if let src = try? element.attr("src") {
+                        viewModels.append(ImageViewModel(src: src))
+                    }
+                    
+                    //                    case "a":
+                    //                        if let href = try? element.attr("href"), let text = try? element.text() {
+                    //                            if text != "." {
+                    //                                viewModels.append(LinkViewModel(label: text, destination: href))
+                    //                            }
+                    //                        }
+                    
+                case "h1", "h2", "h3", "h4", "h5", "h6":
+                    if let text = try? element.text() {
+                        viewModels.append(TitleViewModel(text: text))
+                    }
+                case "p":
+                    if let text = try? element.text() {
+                        viewModels.append(ParagraphViewModel(text: text))
+                    }
+                    
+                case "ul":
+                    if let listItems = try? element.select("li") {
+                        for listItem in listItems {
+                            if let text = try? listItem.text() {
+                                viewModels.append(ListItemViewModel(text: text))
                             }
                         }
-                        
-                    case "iframe":
-                        if let src = try? element.attr("src") {
-                            viewModels.append(YouTubeViewModel(embedURL: src))
-                        }
-                    default:
-                        break
                     }
+                    
+                case "iframe":
+                    if let src = try? element.attr("src") {
+                        viewModels.append(YouTubeViewModel(embedURL: src))
+                    }
+                default:
+                    break
                 }
+                //                }
             }
             return viewModels
         } catch {
@@ -235,7 +236,22 @@ struct Manager {
         }
     }
     
-     
+    func makeTextBold(progress: CGFloat, for text: String) -> Text {
+        
+        var boldText = ""
+        let characters = Array(text)
+        let numCharacters = characters.count
+        
+        for i in 0..<numCharacters {
+            let charProgress = Double(i) / Double(numCharacters - 1)
+            let isBold = charProgress <= progress
+            boldText.append(isBold ? "\(characters[i])" : "\(characters[i])")
+        }
+        
+        return Text(boldText)
+        
+    }
+    
 }
 
 

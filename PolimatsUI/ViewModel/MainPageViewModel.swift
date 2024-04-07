@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+enum hapticFeedback: String {
+    case light, medium, heavy, soft, rigid
+}
+
 //"https://polimats.com/wp-json/wp/v2/posts?per_page=100&categories=\(category)"
 
 @MainActor class MainPageViewModel: ObservableObject {
@@ -40,6 +44,8 @@ import SwiftUI
     var currentPage = 1
     var lastSelectedCategory: String = ""
     var lastSelectedCategoryMore: Int? = nil
+    
+    //MARK: - Fetch data for articles in main page
     
     func getData(category: String? = nil) {
         
@@ -84,6 +90,8 @@ import SwiftUI
         
     }
     
+    //MARK: - Fetch data for more article section inside articles
+    
     func getMoreArticleData(category: Int? = nil) {
     
         Task {
@@ -123,6 +131,8 @@ import SwiftUI
         }
         
     }
+    
+    //MARK: - Fetch data for popular view
     
     func getPopularData() {
         
@@ -164,6 +174,8 @@ import SwiftUI
         }
         
     }
+    
+    //MARK: - Fetch data for search view
     
     func searchData(search: String) {
         
@@ -213,6 +225,8 @@ import SwiftUI
         }
     }
     
+    //MARK: - Fetch data for ForYou view
+    
     func getRandomData(category: Int) {
         
         isLoading = true
@@ -255,9 +269,33 @@ import SwiftUI
         
     }
     
-    func hapticFeedback() {
-        let generator = UIImpactFeedbackGenerator(style: .rigid)
-        generator.impactOccurred()
+    //MARK: - Haptic feedback
+    
+    func hapticFeedback(mode: hapticFeedback) {
+        
+        switch mode {
+            
+        case .light:
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
+            
+        case .medium:
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+            
+        case .heavy:
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+            
+        case .soft:
+            let generator = UIImpactFeedbackGenerator(style: .soft)
+            generator.impactOccurred()
+            
+        case .rigid:
+            let generator = UIImpactFeedbackGenerator(style: .rigid)
+            generator.impactOccurred()
+        }
+        
     }
     
 }

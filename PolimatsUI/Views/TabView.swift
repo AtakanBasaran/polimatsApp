@@ -41,7 +41,7 @@ struct TabbedView: View {
                     .tag(1)
                 
                 
-                ForYouBeginning()
+                ForYouSlide()
                     .tag(2)
                 
                     .onChange(of: selectedTab) { newValue in
@@ -99,7 +99,7 @@ struct TabbedView: View {
                         Button(action: {
                             withAnimation(.spring) {
                                 selectedTab = item.rawValue
-                                mainVM.hapticFeedback()
+                                mainVM.hapticFeedback(mode: .heavy)
                             }
                             
                             if selectedTab == 0 && isButtonTapped {

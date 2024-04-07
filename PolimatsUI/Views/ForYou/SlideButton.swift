@@ -2,7 +2,7 @@
 //  SlideButton.swift
 //  PolimatsUI
 //
-//  Created by Atakan Başaran on 5.04.2024.
+//  Created by Atakan Başaran on 4.04.2024.
 //
 
 import SwiftUI
@@ -68,7 +68,7 @@ struct SlideButton: View {
                         })
                     
                         .onEnded({ value in
-                            withAnimation(.easeOut) {
+                            withAnimation(.easeInOut) {
                                 offset = .zero
                                 progress = 0
                             }

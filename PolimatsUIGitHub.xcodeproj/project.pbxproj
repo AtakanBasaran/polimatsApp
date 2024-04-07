@@ -31,12 +31,13 @@
 		BB5C7E0D2B9F6ACC0081AC52 /* MadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C7E0C2B9F6ACC0081AC52 /* MadeIn.swift */; };
 		BB63C54F2BA9CB6E00EFE764 /* SearchArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63C54E2BA9CB6E00EFE764 /* SearchArticleView.swift */; };
 		BB6AB4202BBEBC540091CC69 /* ForYouSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */; };
-		BB6AB4432BC06B9C0091CC69 /* SlideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */; };
+		BB6AB43C2BBF1BEB0091CC69 /* SlideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB43B2BBF1BEB0091CC69 /* SlideButton.swift */; };
+		BB6AB43E2BC0342A0091CC69 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AB43D2BC0342A0091CC69 /* Modifier.swift */; };
+		BB6AB4412BC05D9A0091CC69 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = BB6AB4402BC05D9A0091CC69 /* GoogleMobileAds */; };
 		BB716CA02B94FEC600A440FE /* CategoryRectangleNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB716C9F2B94FEC600A440FE /* CategoryRectangleNew.swift */; };
 		BB716CA62B95250400A440FE /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB716CA32B95250400A440FE /* Comfortaa-Bold.ttf */; };
 		BB716CA72B95250400A440FE /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB716CA42B95250400A440FE /* Comfortaa-Light.ttf */; };
 		BB716CA82B95250400A440FE /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB716CA52B95250400A440FE /* Comfortaa-Regular.ttf */; };
-		BB716CAC2B96837C00A440FE /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = BB716CAB2B96837C00A440FE /* GoogleMobileAds */; };
 		BB716CAE2B9686FF00A440FE /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB716CAD2B9686FF00A440FE /* NativeAdView.swift */; };
 		BB716CB02B970B0C00A440FE /* ViewModelAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB716CAF2B970B0C00A440FE /* ViewModelAd.swift */; };
 		BB716CB22B9713E800A440FE /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB716CB12B9713E800A440FE /* NativeAdView.xib */; };
@@ -123,7 +124,8 @@
 		BB5C7E0C2B9F6ACC0081AC52 /* MadeIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadeIn.swift; sourceTree = "<group>"; };
 		BB63C54E2BA9CB6E00EFE764 /* SearchArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArticleView.swift; sourceTree = "<group>"; };
 		BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouSlide.swift; sourceTree = "<group>"; };
-		BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
+		BB6AB43B2BBF1BEB0091CC69 /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
+		BB6AB43D2BC0342A0091CC69 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		BB716C9F2B94FEC600A440FE /* CategoryRectangleNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRectangleNew.swift; sourceTree = "<group>"; };
 		BB716CA32B95250400A440FE /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		BB716CA42B95250400A440FE /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
@@ -182,7 +184,7 @@
 			files = (
 				BB2A556C2B7EA80B001F1993 /* SwiftSoup in Frameworks */,
 				BB5891102B93472900B72DDA /* OneSignalFramework in Frameworks */,
-				BB716CAC2B96837C00A440FE /* GoogleMobileAds in Frameworks */,
+				BB6AB4412BC05D9A0091CC69 /* GoogleMobileAds in Frameworks */,
 				BB5891122B93472900B72DDA /* OneSignalInAppMessages in Frameworks */,
 				BBA38C972B8E4BEE00E4BC34 /* Lottie in Frameworks */,
 			);
@@ -255,7 +257,7 @@
 				BBBB7D352B976F4400244FB0 /* ForYouView.swift */,
 				BBBB7D372B97A47C00244FB0 /* ForYouBeginning.swift */,
 				BB6AB41F2BBEBC540091CC69 /* ForYouSlide.swift */,
-				BB6AB4422BC06B9C0091CC69 /* SlideButton.swift */,
+				BB6AB43B2BBF1BEB0091CC69 /* SlideButton.swift */,
 			);
 			path = ForYou;
 			sourceTree = "<group>";
@@ -366,6 +368,7 @@
 				BB852EAD2B704A8600AA7043 /* LoadingViewLogo.swift */,
 				BB3CECEC2B75964D00DF287B /* loadingScreen.swift */,
 				BB29F6202B8BE83A00853361 /* NoConnection.swift */,
+				BB6AB43D2BC0342A0091CC69 /* Modifier.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -441,7 +444,7 @@
 				BBA38C962B8E4BEE00E4BC34 /* Lottie */,
 				BB58910F2B93472900B72DDA /* OneSignalFramework */,
 				BB5891112B93472900B72DDA /* OneSignalInAppMessages */,
-				BB716CAB2B96837C00A440FE /* GoogleMobileAds */,
+				BB6AB4402BC05D9A0091CC69 /* GoogleMobileAds */,
 			);
 			productName = PolimatsUI;
 			productReference = BB852E7F2B6FA1B100AA7043 /* PolimatsUI.app */;
@@ -465,7 +468,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */;
+			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -478,7 +481,7 @@
 				BB2A556A2B7EA80B001F1993 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				BBA38C952B8E4BEE00E4BC34 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				BB58910C2B93472900B72DDA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
-				BB716CAA2B96837C00A440FE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				BB6AB43F2BC05D9A0091CC69 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = BB852E802B6FA1B100AA7043 /* Products */;
 			projectDirPath = "";
@@ -539,6 +542,7 @@
 				BB3CECED2B75964D00DF287B /* loadingScreen.swift in Sources */,
 				BB852EC32B72EB9C00AA7043 /* TabBarItems.swift in Sources */,
 				BBC3AD782B875408008BE6B5 /* MoreArticle.swift in Sources */,
+				BB6AB43E2BC0342A0091CC69 /* Modifier.swift in Sources */,
 				BB852EA02B6FB0A000AA7043 /* CategoryView.swift in Sources */,
 				BB852EC52B72F05C00AA7043 /* TabView.swift in Sources */,
 				BBBB7D382B97A47C00244FB0 /* ForYouBeginning.swift in Sources */,
@@ -554,7 +558,7 @@
 				BB852EBB2B71666B00AA7043 /* EndArticle.swift in Sources */,
 				BB5C7E0D2B9F6ACC0081AC52 /* MadeIn.swift in Sources */,
 				BB852EA52B6FC15300AA7043 /* CategoryViewCell.swift in Sources */,
-				BB6AB4432BC06B9C0091CC69 /* SlideButton.swift in Sources */,
+				BB6AB43C2BBF1BEB0091CC69 /* SlideButton.swift in Sources */,
 				BB5C7E012B9A439B0081AC52 /* Constants.swift in Sources */,
 				BB852EB92B71658700AA7043 /* ArticleView.swift in Sources */,
 				BB2A55732B852E6D001F1993 /* ContentUsage.swift in Sources */,
@@ -609,7 +613,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -636,7 +640,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -705,7 +709,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -761,7 +765,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -793,14 +797,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -832,14 +836,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -857,7 +861,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */ = {
+		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB852E902B6FA1B300AA7043 /* Debug */,
@@ -894,12 +898,12 @@
 				minimumVersion = 5.1.0;
 			};
 		};
-		BB716CAA2B96837C00A440FE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+		BB6AB43F2BC05D9A0091CC69 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.1;
+				minimumVersion = 11.2.0;
 			};
 		};
 		BBA38C952B8E4BEE00E4BC34 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
@@ -933,9 +937,9 @@
 			package = BB58910C2B93472900B72DDA /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalInAppMessages;
 		};
-		BB716CAB2B96837C00A440FE /* GoogleMobileAds */ = {
+		BB6AB4402BC05D9A0091CC69 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BB716CAA2B96837C00A440FE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			package = BB6AB43F2BC05D9A0091CC69 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
 		};
 		BBA38C962B8E4BEE00E4BC34 /* Lottie */ = {

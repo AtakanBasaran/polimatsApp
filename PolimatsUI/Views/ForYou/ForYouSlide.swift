@@ -70,16 +70,16 @@ struct ForYouSlide: View {
                         .lineSpacing(10)
                         .padding(.horizontal, 20)
                         .opacity(max(0.3, progress + 0.1))
-                    
+      
                     
                     SlideButton(offset: $offset, progress: $progress)
                     
-         
+                    
                     .navigationDestination(isPresented: $mainVM.isActiveRandom) {
                         ForYou(dataPolimats: mainVM.polimatsDataRandom.first ?? exData.exArticle)
                     }
                 }
-                .padding(.bottom, 40)
+                .padding(.top, 120)
             }
         }
         
@@ -114,6 +114,8 @@ struct ForYouSlide: View {
 
     }
 }
+
+
 
 #Preview {
     ForYouSlide()

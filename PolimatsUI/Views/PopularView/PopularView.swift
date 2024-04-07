@@ -72,13 +72,13 @@ struct PopularView: View {
                             PopularCell(dataPolimats: mainVM.polimatsDataPopular[index], action: {
                                 withAnimation(.spring) {
                                     dataTap = mainVM.polimatsDataPopular[index]
-                                    mainVM.hapticFeedback()
+                                    mainVM.hapticFeedback(mode: .heavy)
                                     mainVM.showArticle = true
                                 }
                             })
                             .onTapGesture {
                                 dataTap = mainVM.polimatsDataPopular[index]
-                                mainVM.hapticFeedback()
+                                mainVM.hapticFeedback(mode: .heavy)
                                 mainVM.showArticle = true
                             }
                         }
