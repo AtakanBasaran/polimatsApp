@@ -468,7 +468,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */;
+			buildConfigurationList = BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -787,7 +787,8 @@
 				INFOPLIST_FILE = PolimatsUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = polimats;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Size özel reklamlar göstermek için sizden izin istiyoruz";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Seçtiğiniz fotoğrafları kaydetmek için fotoğraflarınıza erişmek istiyoruz.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Size özel reklamlar göstermek için sizden izin istiyoruz.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -798,7 +799,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.PolimatsGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -826,7 +827,8 @@
 				INFOPLIST_FILE = PolimatsUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = polimats;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Size özel reklamlar göstermek için sizden izin istiyoruz";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Seçtiğiniz fotoğrafları kaydetmek için fotoğraflarınıza erişmek istiyoruz.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Size özel reklamlar göstermek için sizden izin istiyoruz.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -837,7 +839,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.Polimats;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AtakanBasaran.PolimatsGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -861,7 +863,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUI" */ = {
+		BB852E7A2B6FA1B100AA7043 /* Build configuration list for PBXProject "PolimatsUIGitHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB852E902B6FA1B300AA7043 /* Debug */,

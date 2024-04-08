@@ -121,22 +121,8 @@ struct Person: View {
                         .stroke(LinearGradient(colors: [Color(.darkGray)], startPoint: .top, endPoint: .bottom),style: StrokeStyle(lineWidth: 3))
                         .scaleEffect(isPressing ? 1.5 : pressed ? 1.5 : 1)
                 }
-                .gesture(
-                    LongPressGesture(minimumDuration: .infinity)
-                        .updating($isPressing) { value, state, transaction in
-                            state = value
-                            transaction.animation = Animation.smooth
-
-                        }
-       
-                        .onEnded({ value in
-                            pressed = value
-                        })
-                )
-
-                
-                
             
+
             
             VStack(alignment: .leading, spacing: 15) {
                 
