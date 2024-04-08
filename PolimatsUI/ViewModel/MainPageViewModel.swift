@@ -37,8 +37,7 @@ enum hapticFeedback: String {
     @Published var randomArticleOnline = false
     @Published var dismissPopularArticle = false
     @Published var dismissForYouArticle = false
-    @Published var isPhotoSaved = false
-
+    
 
    
     var currentPage = 1
